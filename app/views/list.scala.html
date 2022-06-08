@@ -1,0 +1,16 @@
+@(users: Seq[User])
+
+@main("Users") {
+    <h1>You have @users.size Users(s)</h1>
+
+    <div>
+        <ul>
+        @users.map { user =>
+            <li>
+                @user.firstName
+            </li>
+        }
+        </ul>
+    </div>
+
+}
